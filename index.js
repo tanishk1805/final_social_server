@@ -29,7 +29,7 @@ app.use(helmet.crossOriginResourcePolicy({policy:"cross-origin"}));
 app.use(morgan("common"));
 app.use(bodyParser.json({limit:"30mb",extended:true}));
 app.use(bodyParser.urlencoded({limit:"30mb",extended:true}));
-app.use(cors({origin:["http://localhost:3000","https://64e36188e0140d13904496f1--rad-dasik-d2d27f.netlify.app"]}));
+app.use(cors({origin:["http://localhost:3000","https://reliable-pithivier-cd0116.netlify.app"]}));
 app.use("/assets",express.static(path.join(__dirname,'/public/assets')));
 
 //File Storage
